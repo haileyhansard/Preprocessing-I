@@ -1,1 +1,207 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(https://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFrOF6lw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 2;
+  font-size: 1.6rem;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: snow;
+}
+header {
+  display: flex;
+  width: 100%;
+  background-color: #413f44;
+  color: lightpink;
+  border: 1px solid yellow;
+  padding: 3% 2%;
+}
+header .title {
+  width: 100%;
+  text-align: left;
+  padding: 2.5% 7%;
+}
+header h1 {
+  font-size: 4rem;
+  border: 1px solid yellow;
+}
+header h3 {
+  font-size: 1.8rem;
+  color: snow;
+  border: 1px solid yellow;
+}
+header nav {
+  border: 1px solid yellow;
+  padding-top: 7% 2%;
+}
+header nav a {
+  color: #413f44;
+  background-color: lightpink;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: solid 2px snow;
+  margin-right: 2%;
+}
+.circular--square {
+  border-radius: 50%;
+  max-height: 200px;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.left-content .text-container {
+  width: 30%;
+  padding: 2%;
+}
