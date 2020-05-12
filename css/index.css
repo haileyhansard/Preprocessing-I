@@ -148,7 +148,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  line-height: 2;
+  line-height: 1.5;
   font-size: 1.6rem;
   font-family: 'Nunito Sans', sans-serif;
   background-color: snow;
@@ -160,7 +160,7 @@ header {
   background-color: #413f44;
   color: lightpink;
   border: 1px solid yellow;
-  padding: 3% 2%;
+  padding: 3% 3%;
 }
 header .title {
   width: 100%;
@@ -188,10 +188,6 @@ header nav a {
   border: solid 2px snow;
   margin-right: 2%;
 }
-h2 {
-  font-size: 2rem;
-  color: #413f44;
-}
 .circular--square {
   border-radius: 50%;
   max-height: 200px;
@@ -202,31 +198,46 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+.container h2 {
+  font-size: 2rem;
+  color: #413f44;
+  text-transform: uppercase;
+}
 .container .left-content {
   flex-basis: 33%;
+  background-color: lightpink;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+}
+.container .left-content .text-container {
+  font-size: 1.4rem;
+  padding: 2%;
+  align-content: space-evenly;
+  margin-bottom: 5%;
+}
+.container .left-content .text-container p {
+  margin-bottom: 37%;
+}
+.container .left-content .text-container-contact {
+  font-size: 1.4rem;
+  padding: 2%;
+  align-content: space-evenly;
+  margin-bottom: 5%;
+  margin-top: 60%;
 }
 .container .right-content {
   flex-basis: 66%;
-}
-.container > .left-content {
-  display: flex;
-  flex-direction: column;
+  background-color: snow;
   justify-content: space-evenly;
-  margin-bottom: 20px;
-  background-color: lightpink;
-}
-.left-content > .text-container {
-  width: 30%;
+  width: 100%;
   padding: 2%;
+}
+.container .right-content .text-container {
   font-size: 1.4rem;
-}
-.container > .right-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.right-content > .text-container {
-  width: 70%;
   padding: 2%;
-  font-size: 1.4rem;
+  align-content: space-evenly;
+}
+.container .right-content p {
+  margin-bottom: 3%;
 }

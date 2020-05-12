@@ -70,7 +70,7 @@ html{
   }
 
 body{
-	line-height:2;
+	line-height:1.5;
 	font-size:1.6rem;
 	font-family: 'Nunito Sans', sans-serif;
 	background-color: @secondary-color;
@@ -84,15 +84,13 @@ header{
 	background-color: @accent-color;
 	color: @font-header-color;
 	border: 1px solid yellow;
-	padding: 3% 2%;
-	// flex-wrap:wrap;
+	padding: 3% 3%;
 
 	.title{
-	width:100%;
-	text-align:left;
-	padding: 2.5% 7%;
-	
-}
+		width:100%;
+		text-align:left;
+		padding: 2.5% 7%;
+	}
 
 	h1{
 		font-size: 4rem;
@@ -102,8 +100,8 @@ header{
 	h3{
 	font-size: 1.8rem;
 	color:@secondary-color;
-	border: 1px solid yellow;
-}
+	border: 1px solid yellow;		
+	}	
 	nav{
 		border: 1px solid yellow;
 		padding-top:7% 2%;
@@ -121,11 +119,6 @@ header{
   }
 }
 
-h2{
-	font-size: 2rem;
-	color:@accent-color;
-}
-
 .circular--square {
 	border-radius: 50%;
 	max-height: 200px;
@@ -137,40 +130,65 @@ h2{
 	display:flex;
 	flex-wrap:wrap;
 
+	h2{
+	font-size: 2rem;
+	color:@accent-color;
+	text-transform: uppercase;
+	}
+	
 	.left-content{
 		flex-basis:33%;
+		background-color: @font-header-color;
+		justify-content: space-between;
+		width:100%;
+		padding:2%;
+		
+
+		.text-container{
+			font-size: 1.4rem;
+			padding: 2%;
+			align-content: space-evenly;
+			margin-bottom:5%;
+
+			p{
+				margin-bottom:37%;
+			}
+		}
+		.text-container-contact{
+			font-size: 1.4rem;
+			padding: 2%;
+			align-content: space-evenly;
+			margin-bottom:5%;
+			margin-top: 60%;
+		}	
 		}
 
 	.right-content{
 		flex-basis:66%;
+		background-color: @secondary-color;
+		justify-content: space-evenly;
+		width:100%;
+		padding:2%;
+
+		.text-container{
+			font-size: 1.4rem;
+			padding:2%;
+			align-content: space-evenly;
+		}
+
+		p{
+			margin-bottom:3%;
+		}
 		}
   }
 
+	 
+  
+
+//  .container > .right-content{
+// 	  display:flex;
+// 	  flex-direction: column;
+// 	  justify-content: space-evenly;
+//   }
 
 
-
-  .container > .left-content{
-	  display:flex;
-	  flex-direction: column;
-	  justify-content: space-evenly;
-	  margin-bottom: 20px;
-	  background-color: @font-header-color;
-  }
-
-  .left-content > .text-container{
-	  width:30%;
-	  padding: 2%;
-	  font-size: 1.4rem;
-  }
-
- .container > .right-content{
-	  display:flex;
-	  flex-direction: column;
-	  justify-content: space-evenly;
-  }
-
-  .right-content > .text-container{
-	  width:70%;
-	  padding:2%;
-	  font-size: 1.4rem;
-  }
